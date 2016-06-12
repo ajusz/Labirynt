@@ -60,43 +60,6 @@ public class Labirynt {
 		listaZadan.add(z);
 	}
 	
-	void wypiszKomnaty(){
-		int size = listaKomnat.size();
-		for(int i = 0; i < size; i++){
-			System.out.println(listaKomnat.get(i).numer);
-		}
-	}
-	
-	void wypiszPrzedmioty(){
-		int size = listaPrzedmiotow.size();
-		for(int i = 0; i < size; i++){
-			if(listaPrzedmiotow.get(i).komnata != null)
-				System.out.println(listaPrzedmiotow.get(i).nazwa + " " + "komnata nr " + listaPrzedmiotow.get(i).komnata.numer);
-			else
-				System.out.println("Wlasnosc gracza: " + listaPrzedmiotow.get(i).nazwa);
-		}
-	}
-	
-	void wypiszZlodziei(){
-		int size = listaZlodziei.size();
-		for(int i = 0; i < size; i++){
-			System.out.println(listaZlodziei.get(i).nazwa+ " " + "komnata nr " + listaZlodziei.get(i).komnata.numer);
-		}
-	}
-	
-	void wypiszPrzejscia(){
-		int size = listaPrzejsc.size();
-		for(int i = 0; i < size; i++){
-			System.out.println("Przejscie z " + "komnaty nr " + listaPrzejsc.get(i).komnata1.numer + " do " + "komnaty nr " + listaPrzejsc.get(i).komnata2.numer);
-		}
-	}
-	
-	void wypiszDrzwi(){
-		int size = listaPrzejsc.size();
-		for(int i = 0; i < size; i++){
-			System.out.println("Drzwi pomiedzy " + "komnatą nr " + listaPrzejsc.get(i).komnata1.numer + " a " + "komnatą nr " + listaPrzejsc.get(i).komnata2.numer);
-		}
-	}
 	
 	void level1(){
 
